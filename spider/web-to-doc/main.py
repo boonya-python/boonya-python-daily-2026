@@ -3,11 +3,12 @@
 
 import os
 import sys
+import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from fetcher import fetch_html
-from parser import CSDNArticleParser
+from parser import get_parser
 from downloader import ImageDownloader
 from generators import WordGenerator, PdfGenerator
 
@@ -24,7 +25,7 @@ def run(url, output_dir='.'):
         print("❌ 无法获取页面，程序退出")
         return
 
-    parser = CSDNArticleParser()
+    parser = get_parser(url)
     title, content_div, img_urls = parser.parse(html, url)
     print(f'📄 标题: {title}')
     print(f'🖼️  发现 {len(img_urls)} 张图片')
@@ -37,7 +38,7 @@ def run(url, output_dir='.'):
     word_path = os.path.join(output_dir, f'{safe_title}.docx')
 
     word_gen = WordGenerator()
-    word_gen.generate(title, content_div, url_to_local, word_path)
+    word_gen.generate(title, content_div, url_to_local, word_path, source_url=url)
 
     pdf_path = os.path.join(output_dir, f'{safe_title}.pdf')
     pdf_gen = PdfGenerator()
@@ -49,8 +50,12 @@ def run(url, output_dir='.'):
 
 
 def main():
-    url = 'https://blog.csdn.net/m0_65635427/article/details/130780280'
-    run(url)
+    parser = argparse.ArgumentParser(description='CSDN 文章爬虫 - 导出为 Word 和 PDF')
+    parser.add_argument('url', help='CSDN 文章 URL')
+    parser.add_argument('-o', '--output', default='.', help='输出目录（默认当前目录）')
+    args = parser.parse_args()
+
+    run(args.url, args.output)
 
 
 if __name__ == '__main__':

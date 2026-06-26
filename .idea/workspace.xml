@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b30213b0-0741-4134-a7fa-4384fd5be459" name="更改" comment="feat: 批量修改json字段值">
-      <change afterPath="$PROJECT_DIR$/spider/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/web_to_doc.py" afterDir="false" />
+    <list default="true" id="b30213b0-0741-4134-a7fa-4384fd5be459" name="更改" comment="feat: 互联网博客文章转doc、pdf（教程类）.STEP2">
+      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_003.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/~$入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/完整教程：【QT第一章】QT基础知识.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/完整教程：【QT第一章】QT基础知识.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/QT入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/QT入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/generators/pdf_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/generators/pdf_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/generators/word_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/generators/word_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_001.png" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_002.png" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_002.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,11 +126,29 @@
       <option name="project" value="LOCAL" />
       <updated>1782444320437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 互联网博客文章转doc、pdf（教程类）">
+      <option name="closed" value="true" />
+      <created>1782458471563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782458471563</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 互联网博客文章转doc、pdf（教程类）.STEP2">
+      <option name="closed" value="true" />
+      <created>1782458509865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782458509865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 批量修改json字段值" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 批量修改json字段值" />
+    <MESSAGE value="feat: 互联网博客文章转doc、pdf（教程类）" />
+    <MESSAGE value="feat: 互联网博客文章转doc、pdf（教程类）.STEP2" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 互联网博客文章转doc、pdf（教程类）.STEP2" />
   </component>
 </project>

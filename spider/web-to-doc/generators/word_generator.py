@@ -1,11 +1,37 @@
 import os
+import re
 from docx import Document
 from docx.shared import Inches, Pt
 
+from datetime import datetime
+
+
+def _is_css_style_code(text):
+    css_keywords = ['!important', 'rgba(', '{', '}', ';', 'px;', 'em;', '%',
+                    'color:', 'font-', 'background:', 'margin:', 'padding:',
+                    'border:', 'display:', 'position:', 'width:', 'height:']
+    count = sum(1 for kw in css_keywords if kw in text)
+    if count >= 5 and text.count('{') > 2 and text.count('}') > 2:
+        return True
+    if re.match(r'^\.[\w-]+\s*\{', text.strip()):
+        return True
+    if re.match(r'^pre\s*\{|^code\s*\{|^table\s*\{', text.strip()):
+        return True
+    return False
+
 
 class WordGenerator:
-    def generate(self, title, content_div, url_to_local, output_path):
+    def generate(self, title, content_div, url_to_local, output_path, source_url=None):
         doc = Document()
+
+        # 添加来源信息头部
+        if source_url:
+            doc.add_paragraph('─' * 50)
+            doc.add_paragraph(f'📌 来源: {source_url}')
+            doc.add_paragraph(f'📅 采集时间: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+            doc.add_paragraph('─' * 50)
+            doc.add_paragraph()
+
         doc.add_heading(title, level=1)
 
         def process_element(elem):
@@ -40,7 +66,7 @@ class WordGenerator:
 
             if tag == 'pre':
                 code = elem.get_text().strip()
-                if code:
+                if code and not _is_css_style_code(code):
                     p = doc.add_paragraph()
                     run = p.add_run(code)
                     run.font.name = 'Consolas'

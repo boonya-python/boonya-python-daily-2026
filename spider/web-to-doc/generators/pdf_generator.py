@@ -1,23 +1,54 @@
 import os
+import time
+import uuid
 
 
 class PdfGenerator:
     def generate(self, docx_path, pdf_path):
+        # 生成唯一临时文件，避免覆盖用户正在编辑的文档
+        timestamp = time.strftime('%Y%m%d_%H%M%S')
+        unique_id = uuid.uuid4().hex[:6]
+        temp_docx = docx_path.replace('.docx', f'_temp_{timestamp}_{unique_id}.docx')
+        temp_pdf = pdf_path.replace('.pdf', f'_temp_{timestamp}_{unique_id}.pdf')
+
+        # 复制原文件为临时文件
+        import shutil
+        shutil.copy2(docx_path, temp_docx)
+
         generators = [
-            self._from_docx2pdf,
-            self._from_win32com,
-            self._from_pdfkit,
+            (self._from_docx2pdf, temp_docx, temp_pdf),
+            (self._from_win32com, temp_docx, temp_pdf),
+            (self._from_pdfkit, temp_docx, temp_pdf),
         ]
-        for gen in generators:
+
+        result = False
+        for gen, src, dst in generators:
             try:
-                gen(docx_path, pdf_path)
-                if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
+                gen(src, dst)
+                if os.path.exists(dst) and os.path.getsize(dst) > 0:
+                    # 成功后将临时文件移动到目标位置
+                    shutil.move(dst, pdf_path)
                     print(f'✅ PDF 已生成: {pdf_path}')
-                    return True
+                    result = True
+                    break
             except Exception as e:
                 print(f"⚠️ {gen.__name__} 失败: {e}，尝试下一个方案")
-        print("❌ 所有 PDF 生成方案均失败")
-        return False
+
+        # 清理临时文件
+        if os.path.exists(temp_docx):
+            try:
+                os.remove(temp_docx)
+            except:
+                pass
+        if os.path.exists(temp_pdf) and not result:
+            try:
+                os.remove(temp_pdf)
+            except:
+                pass
+
+        if not result:
+            print("❌ 所有 PDF 生成方案均失败")
+        return result
 
     def _from_docx2pdf(self, docx_path, pdf_path):
         from docx2pdf import convert

@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b30213b0-0741-4134-a7fa-4384fd5be459" name="更改" comment="feat: 互联网博客文章转doc、pdf（教程类）.STEP2">
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_003.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/~$入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/完整教程：【QT第一章】QT基础知识.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/web-to-doc/完整教程：【QT第一章】QT基础知识.pdf" afterDir="false" />
+    <list default="true" id="b30213b0-0741-4134-a7fa-4384fd5be459" name="更改" comment="feat: 互联网博客文章转doc、pdf（教程类）.STEP3">
+      <change afterPath="$PROJECT_DIR$/.trae/documents/markdown-to-pdf-plan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/md_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/pdf_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown_to_pdf/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/QT入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/QT入门看这一篇就够了——超详细讲解（40000多字详细讲解，涵盖qt大量知识）.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/generators/pdf_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/generators/pdf_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/generators/word_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/generators/word_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_001.png" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_001.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_002.png" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/temp_images/img_002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/web-to-doc/web_to_doc.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/web-to-doc/web_to_doc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.python web_to_doc.py.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/DEVELOPERS/boonya-python-daily-2026&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.python -m markdown_to_pdf.main \"E:\\AI\\java\\hrgk-radar-backend\\hrgk-radar-deploy\\aliyun\\IKEv2VPN.md\" -o \"E:\\AI\\java\\hrgk-radar-backend\\hrgk-radar-deploy\\aliyun\".executor": "Run",
+    "Python.python web_to_doc.py.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/AI/python/boonya-python-daily-2026",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DEVELOPERS\boonya-python-daily-2026" />
@@ -74,7 +73,29 @@
       <recent name="E:\DEVELOPERS\boonya-python-daily-2026\spider\web-to-doc" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.python -m markdown_to_pdf.main &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun\IKEv2VPN.md&quot; -o &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun&quot;">
+    <configuration name="python -m markdown_to_pdf.main &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun\IKEv2VPN.md&quot; -o &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun&quot;" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="boonya-python-daily-2026" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/markdown_to_pdf" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="markdown_to_pdf.main" />
+      <option name="PARAMETERS" value="E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun\IKEv2VPN.md -o E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="python web_to_doc.py" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="boonya-python-daily-2026" />
       <option name="ENV_FILES" value="" />
@@ -99,6 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python -m markdown_to_pdf.main &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun\IKEv2VPN.md&quot; -o &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun&quot;" />
+        <item itemvalue="Python.python -m markdown_to_pdf.main &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun\IKEv2VPN.md&quot; -o &quot;E:\AI\java\hrgk-radar-backend\hrgk-radar-deploy\aliyun&quot;" />
         <item itemvalue="Python.python web_to_doc.py" />
       </list>
     </recent_temporary>
@@ -142,13 +165,22 @@
       <option name="project" value="LOCAL" />
       <updated>1782458509865</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 互联网博客文章转doc、pdf（教程类）.STEP3">
+      <option name="closed" value="true" />
+      <created>1782470009358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782470009358</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 批量修改json字段值" />
     <MESSAGE value="feat: 互联网博客文章转doc、pdf（教程类）" />
     <MESSAGE value="feat: 互联网博客文章转doc、pdf（教程类）.STEP2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 互联网博客文章转doc、pdf（教程类）.STEP2" />
+    <MESSAGE value="feat: 互联网博客文章转doc、pdf（教程类）.STEP3" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 互联网博客文章转doc、pdf（教程类）.STEP3" />
   </component>
 </project>

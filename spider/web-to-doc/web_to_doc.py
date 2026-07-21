@@ -294,7 +294,7 @@ def generate_pdf(content_div, url_to_local, output_path):
 
 def main():
     # 可替换为任意 CSDN 文章 URL
-    url = 'https://blog.csdn.net/m0_65635427/article/details/130780280'
+    url = 'https://blog.csdn.net/weixin_44566643/article/details/107552945'
     print(f'🌐 正在抓取（使用 Selenium）: {url}')
 
     # 1. 获取渲染后的 HTML
